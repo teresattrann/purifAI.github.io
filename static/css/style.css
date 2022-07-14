@@ -125,3 +125,13 @@
         display: block;
       }
     }
+    div.molecular {
+      background-color: white;
+      padding: 10px;
+      border: 2px solid black;
+      opacity: 0.6;
+      margin-left:auto;
+      margin-right:auto;
+      width:730px;
+      height:230px;
+    }

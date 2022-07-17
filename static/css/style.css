@@ -3,10 +3,15 @@
     margin-right:100px;
   }
     #page {
-    margin-left:110px;
-    margin-right:110px;
-    width:1229px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
     }
+    #page4 {
+      margin-left:auto;
+      margin-right:auto;
+      width:90%;
+      }
     #container {
       width: 1000px;
       height: 700px;
@@ -50,24 +55,9 @@
       text-decoration: none;
       display: inline-block;
       font-size: 20px;
-      margin: 4px 2px;
+      margin: auto;
       cursor: pointer;
-      margin-left:110px;
-      margin-right:110px;
-      width:1229px;
-    }
-
-    .button1 {
-      background-color: #727f72; 
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      margin: 4px 2px;
-      cursor: pointer;
-      margin-left: 7%;
+      width:85%;
     }
 
 
@@ -88,23 +78,25 @@
       float: left;
       width: 25%;
       margin-bottom: 16px;
-      padding: 0 8px;
+      /* padding: 0 8px; */
+    }
+    
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
     }
     
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      margin: 8px;
-    }
-    
-    .about-section {
-      padding: 50px;
-      text-align: center;
-      background-color: #474e5d;
-      color: white;
     }
     
     .container {
-      padding: 0 16px;
+      /* padding: 0 10px; */
+      background-color: #89b9c8;
+      width: 100%
+
     }
     
     .container::after, .row::after {
@@ -114,16 +106,23 @@
     }
     
     .title {
-      color: grey;
+      color: rgb(95, 92, 92);
     }
     
+    .button2 {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: rgb(34, 122, 124);
+      text-align: center;
+      cursor: pointer;
+      width: 20%;
+    }
     
-    
-    @media screen and (max-width: 1229px) {
-      .column {
-        width: 100%;
-        display: block;
-      }
+    .button:hover {
+      background-color: #555;
     }
     div.molecular {
       background-color: white;
@@ -135,3 +134,5 @@
       width:730px;
       height:230px;
     }
+
+ 
